@@ -7,13 +7,17 @@
 </head>
 <body>
     <div class="container">
-        <h1>Update Task</h1>
+        <div class="container">
+
+                    <h1>Update Task</h1>
 
 <form method="post">
     {% csrf_token %}
        {{ form }}
     <input type="submit" class="button button-primary" value="Update">
 </form>
+
+        </div>
 
     </div>
 
