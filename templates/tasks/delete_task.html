@@ -1,16 +1,16 @@
-{% extends 'tasks/base.html' %}
+    {% extends 'tasks/base.html' %}
 
-{% block title %} Delete task {% endblock %}
-{% block content %}
+    {% block title %} Delete task {% endblock %}
+    {% block content %}
     <div class="container">
         <h4>{{ task }}</h4>
-    <h4>Are you Sure you want to delete? </h4>
+        <h4>Are you Sure you want to delete? </h4>
 
-    <form method="post">
-        {% csrf_token %}
-        <input type="submit" value="Delete">
-        <a href="{% url 'index' %}" class="button button-primary">BACK</a>
-    </form>
+        <form method="post">
+            {% csrf_token %}
+            <input type="submit" value="Delete">
+            <a href="{% url 'index' %}" class="button button-primary">BACK</a>
+        </form>
     </div>
-{% endblock %}
+    {% endblock %}
 
