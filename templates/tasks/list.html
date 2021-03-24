@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TODO</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
-    <style>
-       body{
-        margin-top: 50px;
-       }
-        .btn-red{
-        background-color: #ff6666;
-        }
-    </style>
-</head>
-<body>
+
+    {% extends 'base.html' %}
+
+    {% block title %} Django TODO {% endblock %}
+
+    {% block content %}
     <div class="container">
         <form method="post" action="/">
     {% csrf_token %}
@@ -37,5 +27,4 @@
 
 
     </div>
-</body>
-</html>
+{% endblock %}
